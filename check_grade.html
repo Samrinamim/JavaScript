@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form>
+
+<input type="text" id="asd" placeholder="grade"/><br/>
+
+<button onclick="grade()">show grade</button>
+</form>
+<script>
+
+    function grade() {
+        var mark = document.getElementById('asd').value;
+
+        if(mark>=90 && mark<=100)
+            alert('A');
+        else if (maark<=89 && mark>=80)
+        alert('B');
+        if(mark>=80 && mark<=89)
+            alert('B');
+        else if (maark<=79 && mark>=0)
+            alert('C');
+        if(mark>=70 && mark<=79)
+            alert('C');
+        else if (maark<=69 && mark>=60)
+            alert('C');
+        if(mark>=60 && mark<=69)
+            alert('D');
+        else if (maark<=59 && mark>=50)
+            alert('E');
+        if(mark>=50 && mark<=59)
+            alert('E');
+        else if (maark<50)
+            alert('F');
+        if(mark>=0 && mark<50)
+            alert('F');
+    }
+</script>
+
+</body>
+</html>
