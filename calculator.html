@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text" name="marks" id="number1">
+<select id="selectOption">
+<option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+
+</select>
+<input type="text" name="marks" id="number2">
+<button onclick="getResult()">show</button>
+<script type="text/javascript">
+    function getResult() {
+        var number1 = document.getElementById('number1').value;
+        var number2 = document.getElementById('number2').value;
+
+        var select1 = document.getElementById('selectOption');
+        var operator = select1.options[select1.selectedIndex].value;
+
+        if (operator == '+') {
+            add(number1, number2);
+
+        }
+        else if (operator == '-') {
+            subst(number1, number2);
+        }
+        else if (operator == '*') {
+            multi(number1, number2);
+        }
+        else if (operator == '/') {
+            devide(number1, number2);
+        }
+    }
+//
+//        console.log(operator);
+//        console.log(number1);
+//        console.log(number2);
+
+
+    function add(num1,num2) {
+        alert(Number(num1) + Number(num2));
+    }
+        function subst(num1,num2) {
+            alert(Number(num1) - Number(num2));
+        }
+
+            function multi(num1,num2) {
+                alert(Number(num1) * Number(num2));
+            }
+
+                function devide(num1,num2){
+                    alert(num1 / num2);
+                }
+    </script>
+
+
+</body>
+</html>
